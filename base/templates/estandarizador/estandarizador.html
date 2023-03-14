@@ -34,17 +34,17 @@
           </script>
             
 
-             <form method="POST">
-              <label for="exampleInputEmail1">SELECCIONAR LISTA DE PRECIOS</label><br/>
+            <form method="POST">
+              <label for="exampleInputEmail1">SELECCIONAR RECETA</label><br/>
               <select class="selectpicker" data-live-search="true">
                 
-                {% for listaPrecio in listaPrecios %}
+                {% for listaPrecio in listaPrecio  %}
                 <option value="{{listaPrecio.id}}">{{listaPrecio.nomListaPrecio}}</option>
                 {% endfor %}
                   
               
               </select>
-              </form>       
+              </form>      
             </div>
           </nav>
 
