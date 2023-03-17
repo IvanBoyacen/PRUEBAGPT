@@ -22,9 +22,6 @@ def agregar_receta(request):
         }
     return render(request,'estandarizador/verReceta.html',context)
 
-def lista_centrocostos(request):
-    centroCostos= CentroCosto.objects.all()
-    return render(request, 'estandarizador.html', {'centroCostos': centroCostos})
     
 
 

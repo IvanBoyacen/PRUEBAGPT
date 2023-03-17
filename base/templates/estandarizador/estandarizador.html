@@ -27,18 +27,13 @@
             {% endfor %}
           </select>
           
-          <script>
-            $(document).ready(function() {
-              $('#centroCosto').select2();
-            });
-          </script>
             
 
             <form method="POST">
               <label for="exampleInputEmail1">SELECCIONAR RECETA</label><br/>
               <select class="selectpicker" data-live-search="true">
                 
-                {% for listaPrecio in listaPrecio  %}
+                {% for listaPrecio in listaPrecios  %}
                 <option value="{{listaPrecio.id}}">{{listaPrecio.nomListaPrecio}}</option>
                 {% endfor %}
                   
